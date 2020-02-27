@@ -11,6 +11,14 @@ public class Main {
         String myString = "Hello, World!";
        // System.out.print(myString);
 
+
+        int x = 1000;
+        int x1 = 1_000;
+        // int x2 = 1_000_; Not correct
+        double y = 1000;
+        double y1 = 1_000;
+
+
         // Two available String arrays in Java:
         String[] strArray;
         String strArraySecond[];        // - This is correct too
@@ -35,5 +43,6 @@ public class Main {
             System.out.print("] = ");
             System.out.println(strArray[i]);
         }
+
     }
 }
