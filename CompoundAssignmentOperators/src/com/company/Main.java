@@ -31,5 +31,11 @@ public class Main {
         // or this:
         y3 = y3 * (int)x3;
 
+        //
+        long x4 = 5;
+        long y4 = (x4=3);
+        System.out.println(x4); // Outputs 3
+        System.out.println(y4); // Also, outputs 3
+
     }
 }
