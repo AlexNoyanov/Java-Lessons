@@ -6,6 +6,8 @@ package com.company;
 
 // Casting primitive values
 
+import java.io.File;
+
 public class Main {
 
 
@@ -25,6 +27,14 @@ public class Main {
         System.out.println(z);
 
         System.out.print(2147483647+1); // -2147483648
+
+
+        File xx = new File("myFile.txt");
+        File yy = new File("myFile.txt");
+        File zz = xx;
+        System.out.println(xx == yy); // Outputs false
+        System.out.println(xx == zz); // Outputs true
+
 
 
     }
