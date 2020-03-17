@@ -9,6 +9,17 @@ import java.util.Scanner;
 
 import static java.lang.System.*;
 
+/*
+    Switch expression can be used with this:
+    ■ int and Integer
+    ■ byte and Byte
+    ■ short and Short
+    ■ char and Character
+    ■ int and Integer
+    ■ String
+    ■ enum values
+ */
+
 public class Main {
 
     public static void main(String[] args) throws IOException {
@@ -17,6 +28,8 @@ public class Main {
 
         Scanner in = new Scanner(System.in);
         //int num = in.nextInt();
+
+        Scanner strIn = new Scanner(System.in);
 
         while (value != 1) {
             out.println("Input some value:");
@@ -38,6 +51,31 @@ public class Main {
                     break;
             }
         }
+
+
+        String strValue = "";
+        while(!strValue.equals("password")){
+            out.println("Input the password string:");
+            strValue = strIn.nextLine();
+
+            switch (strValue){
+                case "Password":
+                    out.println("Almoust right");
+                    break;
+
+                case "pasword":
+                    out.println("Try this but different");
+
+                case "password":
+                    out.println("  ==== Correct! ====");
+
+                default:out.println("Not correct");
+                        break;
+
+            }
+
+        }
+
 
     }
 }
