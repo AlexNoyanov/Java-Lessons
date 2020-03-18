@@ -65,15 +65,31 @@ public class Main {
 
                 case "pasword":
                     out.println("Try this but different");
+                    break;
 
                 case "password":
                     out.println("  ==== Correct! ====");
+                    break;
 
                 default:out.println("Not correct");
                         break;
 
             }
 
+        }
+
+
+        int dayOfWeek = 5;
+        switch(dayOfWeek) {
+            default:
+                System.out.println("Weekday");
+                break;
+            case 0:
+                System.out.println("Sunday");
+                break;
+            case 6:
+                System.out.println("Saturday");
+                break;
         }
 
 
