@@ -92,6 +92,25 @@ public class Main {
                 break;
         }
 
+        // Here is the same switch expression but without 'breaks' at the end of each case:
+        switch(dayOfWeek) {
+            case 0:
+                System.out.println("Sunday");
+            default:
+                System.out.println("Weekday");
+            case 6:
+                System.out.println("Saturday");
+                break;
+        }
+
+        // The output is:
+        /*
+
+        Weekday
+Weekday             \ That mean what if one case without 'break' at the end executed the other will be too
+Saturday            /
+         */
+
 
     }
 }
