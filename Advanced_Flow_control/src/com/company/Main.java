@@ -63,5 +63,28 @@ public class Main {
             System.out.println("Value " + searchValue + " found at: " +
                     "(" + positionX + "," + positionY + ")");
         }
+
+        // Using continue keyword:
+        /*
+        optionalLabel : while (booleanExpression){
+
+        // Body
+        // ...
+        // Somewhere in loop:
+        // continue optionalLabel;
+
+        }
+         */
+
+        // Quick example:
+        FIRST_CHAR_LOOP: for (int a = 1; a <= 4; a++) {
+            for (char xx = 'a'; xx <= 'c'; xx++) {
+                if (a == 2 || xx == 'b')                        // Skipping 2b
+                    continue FIRST_CHAR_LOOP;
+                System.out.print(" " + a + xx);                 // The output result will be 1a 3a 4a
+            }
+        }
+
     }
+
 }
