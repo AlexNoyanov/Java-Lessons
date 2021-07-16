@@ -1,0 +1,8 @@
+<template>
+  <input-field default="com.company">IJ_BASE_PACKAGE</input-field>
+</template>
+<dependency>
+<groupId>mysql</groupId>
+<artifactId>mysql-connector-java</artifactId>
+<version>5.1.22</version>
+</dependency>
